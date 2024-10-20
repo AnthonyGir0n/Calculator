@@ -1,6 +1,0 @@
-[build]
-  publish = "build"  # Asegúrate de que esta ruta sea correcta
-  functions = "netlify/functions"
-
-[functions]
-  external_node_modules = ["node-fetch"]
