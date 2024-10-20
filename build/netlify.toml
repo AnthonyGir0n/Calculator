@@ -1,3 +1,5 @@
-"scripts": {
-  "build": "react-scripts build"
-}
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = true
