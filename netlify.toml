@@ -1,10 +1,9 @@
 [build]
-  publish = "build"
-  functions = "netlify/functions"
+  publish = "build"  
+  functions = "netlify/functions" 
 
 [[plugins]]
-  package = "@netlify/plugin-go"
+  package = "@netlify/plugin-go"  
 
 [functions]
-  external_node_modules = ["node-fetch"]
-
+  external_node_modules = ["node-fetch"]  
