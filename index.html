@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Integrales con IA - OpenAI API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Integrales con IA</h1>
+
+        <label for="integralType">Selecciona el tipo de integral:</label>
+        <select id="integralType">
+            <option value="indefinida">Indefinida</option>
+            <option value="definida">Definida</option>
+            <option value="teorema">Teorema Fundamental del Cálculo</option>
+            <option value="potencia">Potencia</option>
+            <option value="cociente">Cociente</option>
+            <option value="multiplicacion">Multiplicación</option>
+            <option value="suma">Suma</option>
+            <option value="sustitucion">Sustitución</option>
+            <option value="partes">Integración por Partes</option>
+        </select>
+
+        <label for="functionInput">Ingresa una función matemática:</label>
+        <input type="text" id="functionInput" placeholder="Ejemplo: x^2 o e^(2x)" />
+
+        <label for="lowerLimit">Límite inferior (solo para integrales definidas):</label>
+        <input type="number" id="lowerLimit" placeholder="Ejemplo: 0" />
+
+        <label for="upperLimit">Límite superior (solo para integrales definidas):</label>
+        <input type="number" id="upperLimit" placeholder="Ejemplo: 1" />
+
+        <button id="calculateBtn">Calcular Integral</button>
+
+        <div id="output"></div>
+        <div id="procedure"></div>
+        <div id="example"></div>
+        <div id="graph"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
