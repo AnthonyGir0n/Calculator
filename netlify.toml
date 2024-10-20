@@ -1,9 +1,10 @@
 [build]
-  publish = "build" 
+  publish = "build"
   functions = "netlify/functions"
 
+[[plugins]]
+  package = "@netlify/plugin-go"
 
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
+[functions]
+  external_node_modules = ["node-fetch"]
+
